@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="14px" viewBox="0 0 18 14" version="1.1">
+    <g id="Concept" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="item_card-buyer" transform="translate(-16.000000, -183.000000)" fill="#00AAFF">
+            <g id="AB" transform="translate(0.000000, 80.000000)">
+                <g id="Group" transform="translate(16.000000, 16.000000)">
+                    <path d="M0,88 L0,88 C0,88.552 0.448,89 1,89 L17,89 C17.552,89 18,88.552 18,88 L18,88 C18,87.448 17.552,87 17,87 L1,87 C0.448,87 0,87.448 0,88 M1,95 L17,95 C17.552,95 18,94.552 18,94 L18,94 C18,93.448 17.552,93 17,93 L1,93 C0.448,93 0,93.448 0,94 L0,94 C0,94.552 0.448,95 1,95 M1,101 L17,101 C17.552,101 18,100.552 18,100 L18,100 C18,99.448 17.552,99 17,99 L1,99 C0.448,99 0,99.448 0,100 L0,100 C0,100.552 0.448,101 1,101" id="Page-1"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

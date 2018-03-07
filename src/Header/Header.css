@@ -1,0 +1,45 @@
+.header-menu-icon {
+  background-image: url(../assets/menu.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.header-menu {
+  cursor: pointer;
+  float: left;
+  height: 24px;
+  margin: 12px 0;
+  padding: 4px;
+  position: relative;
+  width: 24px;
+}
+
+.header-logo {
+  background-image: url(../assets/avito.svg);
+  background-size: 106px 37px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 37px;
+  margin: 10px auto 9px;
+  width: 106px;
+}
+
+.header-float {
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(64,64,64,.1);
+  height: 56px;
+  padding: 0 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5000;
+}
+
+.header {
+  height: 56px;
+}

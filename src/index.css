@@ -11,3 +11,15 @@ table, tbody, td, tfoot, th, thead, tr {
   vertical-align: baseline;
   /* font-family: sans-serif; */
 }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  margin: 0;
+  display: block;
+}
+
+*, a:active, a:focus, a:hover,
+button, select, textarea
+input:active, input:focus,
+{
+  outline: 0;
+}

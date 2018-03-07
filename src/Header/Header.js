@@ -9,7 +9,7 @@ class Header extends Component {
           <div className="header-menu">
             <span className="header-menu-icon"></span>
           </div>
-          <a className="header-logo"></a>
+          <a className="header-logo">{/* // eslint-disable-line */}</a>
         </div>
       </header>
     );

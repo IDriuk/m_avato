@@ -1,5 +1,13 @@
-body {
+a, span,
+body, html, div, p,
+h1, h2, h3, h4, h5, h6,
+form, img, label, caption,
+li, ol, ul,
+table, tbody, td, tfoot, th, thead, tr {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  /* font-family: sans-serif; */
 }

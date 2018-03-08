@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import Locations from '../Locations/Locations';
 import Footer from '../Footer/Footer';
 import AddButton from '../AddButton/AddButton';
+import Navigation from '../Navigation/Navigation';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
       <div className="app">
         <Header />
         <AddButton />
+        <Navigation />
         <Locations />
         <Footer />
       </div>

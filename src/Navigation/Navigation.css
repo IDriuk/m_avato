@@ -1,0 +1,157 @@
+.navigation-drawer-avatar {
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url(../assets/avatar.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 64px;
+  width: 64px;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.navigation-drawer-email,
+.navigation-drawer-login,
+.navigation-drawer-name {
+  color: #fff;
+  line-height: 1.4;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.navigation-drawer-login {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.navigation-drawer-header {
+  background: #0af;
+  display: block;
+  padding: 24px 16px 10px;
+  text-decoration: none;
+}
+
+.navigation-drawer-menu .menu-item {
+  color: #212121;
+  display: block;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 12px 16px 12px 72px;
+  text-decoration: none;
+}
+
+.navigation-drawer-menu .menu-item-active,
+.navigation-drawer-menu .menu-item:hover {
+  background-color: rgba(0,170,255,.05);
+  color: #0af;
+}
+
+.navigation-drawer-menu .menu-item-add,
+.navigation-drawer-menu .menu-item-autosearch,
+.navigation-drawer-menu .menu-item-favorites,
+.navigation-drawer-menu .menu-item-messenger,
+.navigation-drawer-menu .menu-item-notifications,
+.navigation-drawer-menu .menu-item-profile,
+.navigation-drawer-menu .menu-item-search,
+.navigation-drawer-menu .menu-item-settings {
+  background-position: 16px 12px;
+  background-size: 24px 24px;
+}
+
+.navigation-drawer-menu .menu-item-search {
+  background-image: url(../assets/search.svg);
+  background-repeat: no-repeat;
+}
+
+.navigation-drawer-menu .menu-item-autosearch {
+  background-image: url(../assets/autosearch.svg);
+  background-repeat: no-repeat;
+}
+
+.navigation-drawer-menu .menu-item-favorites {
+  background-image: url(../assets/favorites.svg);
+  background-repeat: no-repeat;
+}
+
+.navigation-drawer-menu .menu-item-profile {
+  background-image: url(../assets/profile.svg);
+  background-repeat: no-repeat;
+}
+
+.navigation-drawer-menu .menu-item-messenger {
+  background-image: url(../assets/messenger.svg);
+  background-repeat: no-repeat;
+}
+
+.navigation-drawer-menu .menu-item-add {
+  background-image: url(../assets/add.svg);
+  background-repeat: no-repeat;
+  color: #0af;
+}
+
+.navigation-drawer-menu .menu-item-settings {
+  background-image: url(../assets/settings.svg);
+  background-repeat: no-repeat;
+}
+
+.navigation-drawer-menu .menu-item-borders {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin: 8px 0;
+  padding: 8px 0;
+}
+
+.navigation-drawer-menu {
+  padding: 8px 0;
+}
+
+.navigation-drawer-wrapper {
+  background: #fff;
+  box-shadow: 0 0 12px 0 rgba(63,63,63,.4);
+  position: relative;
+  min-height: 100%;
+  z-index: 6001;
+  width: 85%;
+  max-width: 320px;
+}
+
+.navigation-drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow-y: scroll;
+  z-index: 6001;
+  transform: translate3d(-100%,0,0);
+  transition: transform .25s ease-out;
+}
+
+.navigation-drawer-visible {
+  transform: translate3d(0,0,0);
+}
+
+body.show-navigation-drawer {
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+body.show-navigation-drawer:before {
+  content: '';
+}
+
+body.show-navigation-drawer:before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.75);
+  z-index: 6000;
+}

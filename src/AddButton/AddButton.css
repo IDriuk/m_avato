@@ -43,3 +43,23 @@
 .floating-add-button-visible {
   transform: translate3d(0,0,0);
 }
+
+.floating-add-button:after{
+  content: '';
+}
+
+.floating-add-button, .floating-add-button:after {
+  display: block;
+  width: 212px;
+  height: 48px;
+  left: 0;
+  right: 0;
+}
+
+.floating-add-button:after {
+  background-color: rgba(102,102,102,.15);
+  border-radius: 24px;
+  position: absolute;
+  top: 2px;
+  z-index: 1000;
+}

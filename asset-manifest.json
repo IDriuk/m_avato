@@ -1,10 +1,18 @@
 {
-  "main.css": "static/css/main.6e1c7f4b.css",
-  "main.css.map": "static/css/main.6e1c7f4b.css.map",
-  "main.js": "static/js/main.e9a1f073.js",
-  "main.js.map": "static/js/main.e9a1f073.js.map",
+  "main.css": "static/css/main.52e2fda5.css",
+  "main.css.map": "static/css/main.52e2fda5.css.map",
+  "main.js": "static/js/main.ff25c620.js",
+  "main.js.map": "static/js/main.ff25c620.js.map",
+  "static\\media\\add.svg": "static/media/add.81e254ce.svg",
+  "static\\media\\autosearch.svg": "static/media/autosearch.e81c463a.svg",
+  "static\\media\\avatar.svg": "static/media/avatar.534bb814.svg",
   "static\\media\\avito.svg": "static/media/avito.fb7d9385.svg",
+  "static\\media\\favorites.svg": "static/media/favorites.68949cee.svg",
   "static\\media\\footer_logo.svg": "static/media/footer_logo.2e8b3c61.svg",
   "static\\media\\menu.svg": "static/media/menu.3a259ee0.svg",
-  "static\\media\\plus.svg": "static/media/plus.2a6fb41f.svg"
+  "static\\media\\messenger.svg": "static/media/messenger.b22d90b6.svg",
+  "static\\media\\plus.svg": "static/media/plus.2a6fb41f.svg",
+  "static\\media\\profile.svg": "static/media/profile.fec710b0.svg",
+  "static\\media\\search.svg": "static/media/search.6c1c9900.svg",
+  "static\\media\\settings.svg": "static/media/settings.327480fe.svg"
 }

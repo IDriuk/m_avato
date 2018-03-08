@@ -16,7 +16,11 @@ body, button, html, input {
   padding: 0;
 }
 
-body, html {
+html {
+  position: relative;
+}
+
+body, html, #root, .app {
   background: #fff;
   min-height: 100%;
   overflow-x: hidden;

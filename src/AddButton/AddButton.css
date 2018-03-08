@@ -1,0 +1,45 @@
+.floating-add-button-text {
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .5px;
+  padding: 17px 12px 17px 45px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.floating-add-button-container {
+  background-color: #0af;
+  background-image: url(../assets/plus.svg);
+  background-position: 20px center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  border-radius: 24px;
+  position: relative;
+  z-index: 1001;
+}
+
+.floating-add-button, .floating-add-button:after {
+  display: block;
+  width: 212px;
+  height: 48px;
+  left: 0;
+  right: 0;
+}
+
+.floating-add-button {
+  text-decoration: none;
+  margin: 0 auto 24px;
+  position: fixed;
+  bottom: 0;
+  z-index: 90;
+  transition: transform .25s ease-out;
+  transform: translate3d(0,120px,0);
+}
+
+.floating-add-button-visible {
+  transform: translate3d(0,0,0);
+}

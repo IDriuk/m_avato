@@ -1,9 +1,10 @@
 {
-  "main.css": "static/css/main.7bae457a.css",
-  "main.css.map": "static/css/main.7bae457a.css.map",
-  "main.js": "static/js/main.ebbc002e.js",
-  "main.js.map": "static/js/main.ebbc002e.js.map",
+  "main.css": "static/css/main.6e1c7f4b.css",
+  "main.css.map": "static/css/main.6e1c7f4b.css.map",
+  "main.js": "static/js/main.e9a1f073.js",
+  "main.js.map": "static/js/main.e9a1f073.js.map",
   "static\\media\\avito.svg": "static/media/avito.fb7d9385.svg",
   "static\\media\\footer_logo.svg": "static/media/footer_logo.2e8b3c61.svg",
-  "static\\media\\menu.svg": "static/media/menu.3a259ee0.svg"
+  "static\\media\\menu.svg": "static/media/menu.3a259ee0.svg",
+  "static\\media\\plus.svg": "static/media/plus.2a6fb41f.svg"
 }

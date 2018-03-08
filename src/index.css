@@ -9,7 +9,25 @@ table, tbody, td, tfoot, th, thead, tr {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  /* font-family: sans-serif; */
+}
+
+body, button, html, input {
+  line-height: normal;
+  padding: 0;
+}
+
+body, html {
+  background: #fff;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  word-wrap: break-word;
+  text-size-adjust: none;
+  color: #000;
+  font: 400 14px/normal Arial,sans-serif;
+  font-smoothing: antialiased;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -22,4 +40,12 @@ button, select, textarea
 input:active, input:focus,
 {
   outline: 0;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
 }

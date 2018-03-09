@@ -3,17 +3,30 @@ import './Navigation.css';
 
 class Navigation extends Component {
 
-  componentDidMount() {
-    document.body.classList.add("show-navigation-drawer");
-  }
+  componentDidUpdate() {
+    const { show, hide } = this.props;
 
-  componentWillUnmount() {
-    document.body.classList.remove("show-navigation-drawer");
+    const listener = (e) => {
+      const nav = document.querySelector('.navigation-drawer-wrapper');
+
+      if (!nav.contains(e.target)) {
+        hide();
+      }
+    }
+
+    if( show ) {
+      document.addEventListener('mouseup', listener);
+    } else {
+      document.removeEventListener('mouseup', listener);
+    }
   }
 
   render() {
+
+    const { show } = this.props;
+
     return (
-      <div className="navigation-drawer navigation-drawer-visible">
+      <div className={`navigation-drawer ${show ? "navigation-drawer-visible" : "" }`}>
         <div className="navigation-drawer-wrapper">
 
           <a className="navigation-drawer-header">

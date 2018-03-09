@@ -8,12 +8,37 @@ import AddButton from '../AddButton/AddButton';
 import Navigation from '../Navigation/Navigation';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { navigation: false };
+
+    this.showNavigation = this.showNavigation.bind(this);
+    this.hideNavigation = this.hideNavigation.bind(this);
+  }
+
+  showNavigation() {
+    document.body.classList.add("show-navigation-drawer");
+    this.setState({ navigation: true });
+  }
+
+  hideNavigation() {
+    document.body.classList.remove("show-navigation-drawer");
+    this.setState({ navigation: false });
+  }
+
   render() {
+    const { navigation } = this.state;
     return (
       <div className="app">
-        <Header />
+        <Header
+          onClick={this.showNavigation}
+        />
         <AddButton />
-        <Navigation />
+        <Navigation
+          show={navigation}
+          hide={this.hideNavigation}
+        />
         <Locations />
         <Footer />
       </div>

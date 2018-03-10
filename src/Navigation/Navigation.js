@@ -10,6 +10,7 @@ class Navigation extends Component {
     this.handleMouseUp = this.handleMouseUp.bind(this);
     this.handleTouchStart = this.handleTouchStart.bind(this);
     this.handleTouchMove = this.handleTouchMove.bind(this);
+    this.handleTouchEnd = this.handleTouchEnd.bind(this);
   }
 
   componentDidUpdate() {
@@ -26,22 +27,24 @@ class Navigation extends Component {
     const { hide } = this.props
     const nav = document.querySelector('.navigation-drawer-wrapper');
 
-    if (!nav.contains(e.target)) {
-      hide();
-    }
+    if (!nav.contains(e.target)) hide();
   }
 
-  handleTouchStart(event) {
-    const { clientX: startX } = event.touches[0];
+  handleTouchStart(e) {
+    const { clientX: startX } = e.touches[0];
     this.setState({ startX });
   }
 
-  handleTouchMove(event) {
-    const { clientX } = event.touches[0];
-    const { startX } = this.state;
+  handleTouchMove(e) {
+    const { clientX: endX } = e.touches[0];
+    this.setState({ endX });
+  }
+
+  handleTouchEnd(e) {
+    const { startX, endX } = this.state
     const { hide } = this.props;
 
-    if( startX - clientX > SWIPE_LENGTH ) hide();
+    if ( startX - endX > SWIPE_LENGTH ) hide();
   }
 
   render() {
@@ -54,6 +57,7 @@ class Navigation extends Component {
           className="navigation-drawer-wrapper"
           onTouchStart={this.handleTouchStart}
           onTouchMove={this.handleTouchMove}
+          onTouchEnd={this.handleTouchEnd}
         >
 
           <a className="navigation-drawer-header">
